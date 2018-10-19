@@ -1,0 +1,66 @@
+//* FONTS
+//*===========================================
+
+$font-1: 'Montserrat','Helvetica',helvetica, sans-serif;
+	
+
+//*  FONT SCALING
+//*===========================================
+
+$min-vp-width: 320;
+$max-vp-width: 1280;
+
+$min-font: 16;
+$max-font: 20;
+
+
+//* COLORS
+//*===========================================
+
+$color-1: #004B85;				// Polar Blue
+$color-2: #EE3524;				// Polar Red
+$color-3: #4078A4;				// Blue - Hover
+$color-4: #B42619;				// Red - Hover
+
+$k: #000000;
+$w:	#ffffff;
+
+
+//* GRAYS
+//*===========================================
+
+$grey-1: #7F7F7F;					// Dark
+$grey-2: #E5E5E5;         // Light
+$grey-3: #444444;
+
+
+//* MARGIN & PADDING 
+//*===========================================
+
+$mxw: 1000px;
+
+$space: 1em;
+$space-half: $space/2;
+$space-qrtr: $space/4;
+$space-and-half: $space*1.5;
+$space-2x: $space*2;
+$space-3x: $space*3;
+$space-4x: $space*4;
+
+
+//* BREAKPOINTS 
+//*===========================================
+
+$bp-1: 33.75em;          //* 540px
+$bp-2: 46.875em;         //* 750px
+$bp-3: 52.5em;           //* 840px
+$bp-4: 58.75em;          //* 940px
+$bp-5: 67.5em;           //* 1080px
+$bp-6: 77.5em;           //* 1240px
+
+
+//* FROSTING 
+//*===========================================
+
+$ts: 0 0 4px rgba(0,0,0,.3);
+$bs: 0 4px 14px rgba(0,0,0,.3);

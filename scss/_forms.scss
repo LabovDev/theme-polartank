@@ -1,0 +1,69 @@
+//*  FORM ELEMENTS
+//*=========================================== 
+
+form {
+	h2 { margin: $space-3x 0 $space-half 0; }
+	p { padding-bottom: $space; }
+}
+
+.wpcf7-form-control-wrap {
+	position: inherit !important;
+}
+
+.wpcf7-form {
+	p { 
+		line-height: 1;
+		margin: 0;
+	}
+}
+
+fieldset {}
+
+label {
+	color: $grey-1;
+	font-size: 75%;
+}
+
+textarea {}
+
+input {}
+
+input[type="text"], input[type="tel"],
+input[type="email"], input[type="date"], 
+textarea {
+  background-color: white;
+  border: 1px solid $grey-2;
+  color: $grey-3;
+  font-size: 125%;
+  margin: $space-qrtr 0 $space 0;
+  padding: $space-half;
+  width: 100%;
+}
+
+input[type="text"] {}
+
+input[type="radio"] {}
+
+input[type="checkbox"] {}
+
+select {
+	margin-bottom: $space;
+}
+
+button, input[type="submit"] {
+	background-color: $color-2;
+	border-radius: 8px;
+	border: none;
+	color: $w;
+  display: table;
+  font: 700 normal 80%/1 $font-1;
+  padding: 12px 24px;
+  text-align: left;
+  text-transform: uppercase;
+ 	@include trans(all, 0.3s, ease);
+	&:hover {
+    background-color: $color-4;
+    color: $w;
+    transform: scale(1.03);
+  }
+}

@@ -1,0 +1,724 @@
+//*  TYPOGRAPHY
+//*===========================================
+
+:root { font-size: #{$min-font}px; }
+
+@media (min-width: #{$min-vp-width}px) and (max-width: #{$max-vp-width}px) {
+  :root {
+    font-size: calc( #{$min-font}px + (#{$max-font} - #{$min-font}) * ((100vw - #{$min-vp-width}px) / (#{$max-vp-width} - #{$min-vp-width}) ));
+  }
+}
+
+@media (min-width: #{$max-vp-width}px) {
+  :root {
+    font-size: #{$max-font}px;
+  }
+}
+
+//*  HEADLINES
+//*=========================================== 
+
+h1, h2, h3, h4, h5, h6 {
+	font: 700 normal 100%/1 $font-1;
+	text-transform: uppercase;
+} 
+
+.entry-title {}
+
+.headline {}
+
+
+//*  PARAGRAPH
+//*===========================================
+
+p {
+	font: 400 normal 100%/1.6 $font-1;
+}
+
+em {}
+
+address {
+	margin: $space-half 0 0 0;
+}
+
+blockquote {}
+
+code {}
+
+
+//*  LISTS
+//*===========================================
+
+ul {
+	li {
+		font: 400 normal 100%/1.1 $font-1;
+	}
+}
+
+ol {
+	li {}
+}
+
+
+//*  LINKS
+//*===========================================
+
+a {
+	color: $color-2;
+	&:active {}
+	&:focus {}
+	&:hover {}
+	&:visited {}
+}
+
+.link {
+	text-decoration: none;
+}
+
+.link--topLvl {
+	background-color: $color-3;
+	border-radius: 4px;
+	color: #BBD0E1;
+	font: normal normal 12px/1 $font-1;
+	margin-right: $space-and-half;
+	padding: 4px 8px;
+	@include trans(all, 0.3s, ease);
+	&:hover { color: $w; }
+	@media all and (min-width:$bp-2) {
+		margin-right: $space-2x;
+	}
+	@media all and (min-width:$bp-4) {
+		margin-right: 2.5em;
+	}
+}
+
+.btn {  
+  border-radius: 8px;
+  display: table;
+  font: 700 normal 80%/1 $font-1;
+  margin: 0 auto;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include trans(all, 0.3s, ease);
+  &:hover {
+	  transform: scale(1.02);
+  }
+}
+
+.btn--main {
+	background-color: transparent;
+	border: 3px solid $color-2;
+	color: $color-2;
+	@include trans(all, 0.3s, ease);
+	&:hover {
+		border: 3px solid $color-4;
+    background-color: $color-4;
+    color: $w;
+  }
+}
+
+.btn--scnd {
+	background-color: $w;
+	border: 1px solid rgba(255,255,255,0.5);
+	color: $color-1;
+	@include trans(all, 0.3s, ease);
+	&:hover {
+    background-color: $w;
+    color: $color-1;
+  }
+}
+
+.btn--thrd {
+	background-color: $w;
+	border: 3px solid $color-2;
+	color: $color-2;
+	font-size: 100%;
+	@include trans(all, 0.3s, ease);
+	&:hover {
+		border: 3px solid $color-4;
+    color: $color-4;
+  }
+}
+
+.btn--mainProd {
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-4) {
+		margin: 0;
+	}
+}
+
+.btn--careers {
+	background-color: $color-2;
+	color: $w;
+	margin: 0 0 $space 0;
+	@include trans(all, 0.3s, ease);
+	&:hover {
+    background-color: $color-4;
+    color: $w;
+  }
+}
+
+.sctn__tshow .btn {
+	font-size: 60%;
+	padding: 6px 12px; 
+	margin: 0;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		margin: 0 0 0 $space;
+	}
+}
+
+.ndxProdMenu {
+	@include flex-p(
+		row,
+		wrap,
+		space-evenly,
+		flex-start,
+		flex-start
+	)
+	max-width: $mxw;
+	margin: 0 auto;
+}
+
+.ndxProdMenu__item {
+	display: block;
+	list-style-type: none;
+	margin-bottom: $space-qrtr;
+	width: 100%;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-1) {
+		width: 49%;
+	}
+	@media all and (min-width:$bp-2) {
+		width: 32%;
+	}
+}
+
+.btn--ProdMenu {
+	background-color: rgba(255,255,255,0.6);
+	border: 3px solid $color-4;
+	color: $color-4;
+	width: 100%;
+	@include trans(all, 0.3s, ease);
+	&:hover {
+		background-color: $w;
+		border: 3px solid $color-2;
+		color: $color-2;
+	}
+}
+
+
+//*  HEADLINES
+//*===========================================
+
+.hdln {
+	font-size: 110%;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-align: center;
+	width: 100%;
+}
+
+.hdln--ndxHero {
+	color: $color-1;
+	font-size: 5vw;
+	padding: 0 $space-half;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+		font-size: 200%;
+	}
+}
+
+.hdln--ProdMenu {
+	color: $w;
+	font-size: 90%;
+	margin: $space 0;
+}
+
+.hdln--tshow {
+	color: $w;
+	font-size: 90%;
+	margin: 0 auto $space-half auto;
+	text-transform: none;
+	width: auto;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		margin: 0 $space-half;
+	}
+}
+
+.hdln--ndxAbt {
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	border-top: 1px solid rgba(255,255,255,0.2);
+	color: $w;
+	margin: 0 auto $space auto;
+	max-width: 70%;
+	padding: $space 0;
+}
+
+.hdln--ndxPrd {
+	color: $color-1;
+	font-size: 160%;
+	margin: 0 0 $space-half 0;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-4) {
+		text-align: right;
+		margin: 0 $space 0 0;
+	}
+}
+
+.hdln--ndxRsrcs {
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	border-top: 1px solid rgba(255,255,255,0.2);
+	color: $w;
+	margin: 0 0 $space 0;
+	padding: $space 0;
+}
+
+.hdln--pgHero {
+	color: $color-1;
+	font-size: 8vw;
+	margin: $space auto;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-1) {
+		font-size: 250%;
+	}
+}
+
+.hdln--pllrMn {
+	color: $color-1;
+	display: block;
+	font-size: 180%;
+	letter-spacing: 10px;
+	margin: $space-2x auto 0 auto;
+	text-align: center;
+	width: calc(100% - 1em);
+}
+
+.hdln--pllr {
+	color: $color-1;
+	font-size: 110%;
+	text-align: center;
+	width: 100%;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		font-size: 95%;
+	}
+}
+
+.hdln__rule {
+	background: url('../../img/hdln_shdw.png') center top/contain no-repeat;
+	border-top: 1px solid $grey-2;
+	display: block;
+	height: 10vw;
+	margin: $space-half auto;
+	width: calc(100% - 2em);
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		height: 7vw;
+	}
+}
+
+.hdln--prdHeroH1 {
+	color: $color-1;
+	font-size: 9vw;
+	margin: 0 $space;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+		font-size: 7vw;
+	}
+	@media all and (min-width:$bp-5) {
+		font-size: 5vw;
+		max-width: $mxw;
+		margin: 0 auto;
+	}
+	@media all and (min-width:$bp-6) {
+		font-size: 68px;
+	}
+}
+
+.hdln--prdHeroH2 {
+	color: $grey-3;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+		font-size: 120%;
+	}
+	@media all and (min-width:$bp-5) {
+		font-size: 150%;
+	}
+} 
+
+.hdln--warClaim {
+	background: url('../../img/hdln_shdw.png');
+	background-size: contain;
+	background-position: 0 $space-and-half;
+	background-repeat: no-repeat;	
+	color: $color-1;
+	display: block;
+	height: 12vw;
+	letter-spacing: 2px;
+	margin-bottom: $space !important;
+	padding-bottom: $space-qrtr;
+	width: calc(100% - 2em);
+	text-align: center;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		height: 7vw;
+	}
+	@media all and (min-width:$bp-5) {
+		height: 5vw;
+		font-size: 120%;
+	}
+}
+
+//*  TEXT
+//*===========================================
+
+.txt {
+	font: 400 normal 90%/1.4 $font-1;
+	margin-bottom: $space;
+	text-align: center;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		font: 400 normal 80%/1.4 $font-1;
+	}
+}
+
+.txt--polarBar {
+	color: $color-3;
+	line-height: 1;
+	font-size: 70%;
+	margin-bottom: 0;
+	margin-right: $space-half;
+}
+
+.metaslider .caption-wrap {
+	bottom: auto !important;
+	left: auto !important;
+	background: transparent !important;
+	color: $k !important;
+	opacity: 1 !important;
+	line-height: 1 !important;
+	top: 0;
+	.caption {
+		color: #666;
+		font: 700 normal 4.5vw/1 $font-1;
+		letter-spacing: 1px;
+		margin-top: $space;
+		padding: 0 !important;
+		text-align: center;
+		text-transform: uppercase;
+		@include trans(all, 0.3s, ease);
+		@media all and (min-width:$bp-2) {
+			font-size: 200%;
+			margin-top: $space-half;
+		}
+		@media all and (min-width:$bp-4) {
+			font-size: 250%;
+			margin-top: .75em;
+		}
+		@media all and (min-width:$bp-5) {
+			font-size: 300%;
+		}
+	}
+} 
+
+.txt--ndxHero {
+	color: $color-1;
+	font-weight: 400;
+	margin: $space;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+		font-size: 90%;
+		margin: $space auto;
+		max-width: 75%;
+	}
+	@media all and (min-width:$bp-4) {
+		max-width: 60%;
+	}
+}
+
+.txt--ndxAbt {
+	color: $w;
+	margin: 0 auto $space auto;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+		max-width: 70%;
+	}
+}
+
+.txt--ndxPrd {
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-4) {
+		text-align: left;
+	}
+}
+
+.txt--ndxRsrcs {
+	color: $w;
+}
+
+.txt--pgHero {}
+
+.sctMain {
+	p {
+		margin: 0 0 $space 0;
+		@include trans(all, 0.3s, ease);
+		@media all and (min-width:$bp-3) {
+			font: 400 normal 90%/1.6 $font-1;
+		}
+	}
+	h5, h6 {
+		margin-bottom: $space-half;
+	}
+	ul {
+		margin: 0 0 $space-4x $space;
+		li {
+			font-size: 90%;
+			list-style-type: none;
+			margin-bottom: $space;
+			ul {
+				margin: 1em 0 0 1em;
+				li {
+					font-size: 100%;
+				}
+			}
+			&:before {
+				color: $color-1;
+				content: '\25A0';
+				font-size: 12px;
+				left: -16px;
+				margin-right: -7px;
+				max-height: 0;
+				max-width: 0;
+				position: relative;
+				top: -3px;
+			}
+		}
+	}
+}
+
+.txt--pllr {
+	font-size: 100%;
+	line-height: 1.8;
+	padding: $space;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		font: 400 normal 85%/1.4 $font-1;
+	}
+	@media all and (min-width:$bp-4) {
+		font: 400 normal 80%/1.4 $font-1;
+	}
+}
+
+.sctMain--prd {
+	h2, h3, h4, h5, h6 {
+		background: url('../../img/hdln_shdw.png');
+		background-size: contain;
+		background-position: 0 $space-and-half;
+		background-repeat: no-repeat;	
+		color: $color-1;
+		display: block;
+		font-weight: 700;
+		height: 12vw;
+		letter-spacing: 2px;
+		margin-bottom: $space;
+		padding-bottom: $space-qrtr;
+		width: calc(100% - 2em);
+		text-align: center;
+		@include trans(all, 0.3s, ease);
+		@media all and (min-width:$bp-3) {
+			height: 7vw;
+		}
+		@media all and (min-width:$bp-5) {
+			height: 5vw;
+			font-size: 120%;
+		}
+	}
+}
+
+.sctSide {
+	h3, h4, h5 {
+		margin-bottom: $space-half;
+	}
+	h4, h5 {
+		margin-top: $space-2x;
+	}
+	li {
+		font-size: 90%;
+		line-height: 1.2;
+		list-style-type: none;
+		margin: 0 $space-half $space 0;
+		ul {
+			margin: 1em 0 0 1em;
+			li {
+				font-size: 100%;
+			}
+		}
+	}
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-4) {
+		font-size: 85%;
+		p { font-size: 95%; }
+		h3 { margin-top: 3.75em; }
+	}
+}
+
+.prdGal {
+	ul {
+		margin: 0 0 $space-4x $space;
+		li {
+			font-size: 90%;
+			list-style-type: none;
+			margin-bottom: $space;
+			ul {
+				margin: 1em 0 0 1em;
+				li {
+					font-size: 100%;
+				}
+			}
+			&:before {
+				color: $color-1;
+				content: '\25A0';
+				font-size: 12px;
+				left: -16px;
+				margin-right: -7px;
+				max-height: 0;
+				max-width: 0;
+				position: relative;
+				top: -3px;
+			}
+		}
+	}
+}
+
+
+//*  CASE STUDIES
+//*===========================================
+
+.sctCases__csTile h2 {
+	margin: 0 $space-half $space-half $space-half;
+	width: 100%;
+}
+
+.sctCases__csTile p {
+	margin: 0 $space-half $space $space-half;
+	width: 100%;
+}
+
+
+//*  CASE STUDIES
+//*===========================================
+
+.sctReps__repDets li { 
+	list-style-type: none;
+}
+
+.sctReps__repDets--name {
+	color: $grey-3;
+	font-weight: 700;
+	font-size: 110%;
+}
+
+.sctReps__repDets--title {
+	color: $grey-1;
+	font-size: 80%;
+	line-height: 1.4;
+	margin-bottom: $space;
+}
+
+.sctReps__repDets--terr {
+	color: $grey-1;
+	font-size: 76%;
+	margin-bottom: $space;
+	p {
+		color: $grey-1;
+		font-size: 84%;
+	}
+}
+
+.sctReps__repDets--email {
+	font-size: 85%;
+	margin-bottom: $space {
+		color: $grey-1;
+		font-size: 60%;
+	}
+}
+
+.sctReps__repDets--phone {
+	color: $color-1;
+	font-weight: 700;
+	margin-bottom: $space;
+	p {
+		color: $grey-1;
+		font-size: 60%;
+	}
+}
+
+//*  FORM TYPE
+//*===========================================
+
+.wpcf7-form {
+	h3, h4 { margin-top: $space-4x; }
+}
+
+
+//*  FOOTER 
+//*===========================================
+
+.hdln--ftr {
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	color: $w;
+	font-weight: 400;
+	padding-bottom: $space-half;
+	margin-bottom: $space-half;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		font-size: 90%;
+		text-align: left;
+	}
+}
+
+.ftr__linkItem {
+	font-weight: 700;
+	line-height: 1.8;
+	list-style-type: none;
+	text-transform: uppercase;
+	a { 
+		color: $w;
+		text-decoration: none;
+	}
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-1) {
+		font-size: 70%;
+	}
+	@media all and (min-width:$bp-3) {
+		font-size: 60%;
+	}
+}
+
+.ftr__cntctAddr {
+	color: $w; 
+	font: 400 normal 80%/1 $font-1;
+	margin-bottom: $space-half;
+}
+
+.ftr__cntctTxt {
+	margin-bottom: $space-2x;
+	font-size: 110%;
+	font-weight: 700;
+	line-height: 1.4;
+	a { 
+		color: $w;
+		text-decoration: none;
+	}
+}
+
+.ftr__cntctTxt--cpyrt {
+	color: $color-3;
+	font-size: 60%;
+	margin-bottom: $space-half;
+}
+

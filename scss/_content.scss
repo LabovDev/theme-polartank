@@ -1,0 +1,471 @@
+//*  HOME
+//*===========================================
+
+.sctn {
+	margin: 0 $space-half;
+}
+
+.sctn--ndxHero {
+	background-color: #c5c5c5;
+	background-image: linear-gradient(#c5c5c5 30%, #f4f4f4);
+	margin: 80px 0 0 0;
+	padding: 0 0 $space-2x 0;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+		margin: 100px 0 0 0;
+	}
+}
+
+.metaslider, .slides { overflow: hidden; }
+
+.sctn__ndxProdMenu { 
+	background: $grey-1 url('../../img/drop-shadow_dwn.png') no-repeat center top;
+	margin: 0;
+	padding: $space-half;
+}
+
+.sctn__tshow {
+	background-color: $k;
+	padding: $space-half;
+	margin: 0;
+	@include flex-p(
+		column,
+		nowrap,
+		center,
+		center,
+		center
+	)
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		flex-direction: row;
+	}
+}
+
+.sctn__ndxAbt {
+	background-color: $color-1;
+	margin: 0;
+	padding: $space-2x $space;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+		padding: $space-4x $space-half $space $space-half;
+	}
+}
+
+.sctn__ndxProd {
+	background: $w;
+	background: linear-gradient($color-1, $color-1 28%, $grey-2 28%, $grey-2 100%);
+	margin: 0;
+	padding-bottom: $space;
+}
+
+.ndxProd__img {
+	height: 100%;
+	padding: 0 $space $space $space;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-4) {
+		padding: 0 0 $space 0;
+		width: 70%;
+	}
+}
+
+.ndxProd__cntnt {
+	height: 100%;
+	padding: 0 $space $space $space;
+	width: 100%;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-4) {
+		@include flex-p(
+			row,
+			nowrap,
+			flex-start,
+			flex-start,
+			flex-start
+		)
+	}
+}
+
+.sctn__ndxRscrs {
+	margin: 0;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-4) {
+		margin: $space 0;
+	}
+}
+
+.sctBloc--rscrs {
+	background-color: $grey-3;
+	box-shadow: $bs;
+	padding: $space-2x $space;
+	margin: $space;
+	width: calc(100% - 2em);
+	&:last-child {
+		margin: 0 $space $space $space;
+	}
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		margin: $space 0;
+		&:last-child { margin: $space 0; }
+		width: 44%;
+	}
+}
+
+.sctn__ndxCntct {
+	background-color: $grey-2;
+	margin: 0;
+	padding: $space-3x $space;
+}
+
+
+//*  GENERAL CONTENT 
+//*===========================================
+
+.sctHero {
+	background: 
+		$w url('../../img/home_hero_bckgrnd.jpg') center bottom/cover no-repeat;
+	min-height: 10vh;
+	width: 100%;
+	@include flex-p(
+		column,
+		nowrap,
+		flex-end,
+		center,
+		center
+	)
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-5) {
+		min-height: 30vh;
+	}
+}
+
+.sctMain {
+	margin: $space;
+	width: calc(100% - 2em);
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-4) {
+		flex-basis: 55%;
+		margin: 0;
+	}
+}
+
+.sctWrap--oneCol .sctMain {
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-4) {
+		flex-basis: 75%;
+		margin: 0 auto;
+	}
+}
+
+.sctSide {
+	margin: $space-2x $space $space $space;
+	width: calc(100% - 2em);
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-4) {
+		flex-basis: 40%;
+		margin: 0 0 0 $space;
+	}
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+//*  ABOUT US
+//*===========================================
+
+.sctPllrs {
+	@include flex-p(
+		column,
+		nowrap,
+		flex-start,
+		center,
+		flex-start
+	)
+	width: 100%;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		@include flex-p(
+			row,
+			wrap,
+			space-between,
+			stretch,
+			center
+		)
+	}
+}
+
+.sctPllrs__pillar {
+	background-color: $grey-2;
+	border: 8px solid $w;
+	box-shadow: $bs;
+	margin: $space-half $space;
+	div {
+		background-color: $w;
+		margin: 0 auto;
+		padding: $space;
+		width: 100%;
+	}
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		width: 46%;
+		margin: 0 0 $space 0;
+	}
+	@media all and (min-width:$bp-4) {
+		width: 22%;
+		div {
+			height: 80px;
+			padding: $space-qrtr;
+			@include flex-p(
+				column,
+				nowrap,
+				center,
+				center,
+				center
+			)
+		}
+	}
+}
+
+//*  PRODUCT
+//*===========================================
+
+.sctHero--prd {
+	padding: $space-2x $space-half;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+		padding: $space-3x $space-half $space-4x $space-half;
+	}
+}
+
+.sctMain--prd {}
+
+.sctSide--prd {
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-4) {
+		flex-basis: 45%;
+		margin: 0;
+	}
+}
+
+.prdGal {
+	@include flex-p(
+		row,
+		wrap,
+		flex-start,
+		flex-start,
+		flex-start
+	)
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-4) {
+		padding: 0 0 0 $space-2x;
+	}
+	li {
+		margin: 0 $space-half $space 0 !important;
+		width: 48%;
+	}
+}
+
+//*  CASE STUDIES
+//*===========================================
+
+.sctCases {
+	@include flex-p(
+		row,
+		wrap,
+		space-between,
+		flex-start,
+		flex-start
+	)
+	width: 100%;
+}
+
+.sctCases__csTile {
+	margin: 0 $space $space-3x $space;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-3) {
+		align-self: stretch;
+		@include flex-p(
+			column,
+			nowrap,
+			space-between,
+			flex-start,
+			center
+		)
+		flex-basis: 46%;
+		margin: 0 0 $space-3x 0;
+	}
+	@media all and (min-width:$bp-5) {
+		flex-basis: 30%;
+	}
+}
+
+.sctCases__img {
+	margin-bottom: $space-half;
+	flex-shrink: 0;
+}
+
+//*  SALES REPS
+//*===========================================
+
+.sctReps { width: 100%; }
+
+.sctReps__repTile {
+	@include flex-p(
+		row,
+		wrap,
+		space-between,
+		stretch,
+		flex-start
+	)
+}
+
+.sctReps__repDets {
+	background-color: $grey-2;
+	border: 8px solid $w;
+	box-shadow: $bs;
+	display: block;
+	margin: 0 $space $space $space;
+	padding: $space-half $space-half 0 $space-half;
+	width: calc(100% - 2em);
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-1) {
+		flex-basis: 48%;
+		margin: 0 0 $space 0;
+	}
+	@media all and (min-width:$bp-5) {
+		flex-basis: 32%;
+	}
+}
+
+@media all and (-ms-high-contrast:none) { 
+	.sctReps__repDets {
+		@media all and (min-width:$bp-1) {
+			flex-basis: 44%;
+		}
+		@media all and (min-width:$bp-5) {
+			flex-basis: 28%;
+		}		
+	}
+}
+
+
+
+//*  ACCORDION
+//*===========================================
+
+.sctCarrers {
+	margin: $space-2x;
+	width: calc(100% - 2em);
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+		margin: $space-2x auto;
+		max-width: 750px;
+	}
+}
+
+button.accordion {
+	background-color: $grey-1;
+	border: none;
+	border-radius: 0;
+	color: $w;
+	cursor: pointer;
+	font: 700 normal 80%/1 $font-1;
+	letter-spacing: 1px;
+	outline: none;
+	margin: 1px auto 0 auto;
+	padding: 18px;
+	text-align: center;
+	transition: 0.3s;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+button.accordion.active, button.accordion:hover {
+	background-color: $color-1;
+	color: $w;
+	margin-bottom: 0;
+}
+
+div.panel {
+	border-bottom: 1px solid $grey-2;
+	border-left: 1px solid $grey-2;
+	border-right: 1px solid $grey-2;
+	background-color: $w;
+	max-height: 0;
+	margin-bottom: $space;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	width: 100%;
+}
+
+.flex-wrap {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	@include flex-p(
+		row,
+		wrap,
+		flex-start,
+		flex-start,
+		flex-start
+	)
+	margin: 0 $space;
+}
+
+.panel h1 {
+	font: 700 normal 90%/1 $font-1;
+	margin-bottom: $space;
+	text-transform: uppercase;
+}
+
+.panel p {
+	margin: 0;
+}
+
+.left {
+	width: 100%;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+// 		padding: 0 8% 0 4%;
+		flex-basis: 50%;
+	}
+}
+
+.right {
+	padding-right: 4%;
+	margin: 32px 0;
+	width: 100%;
+	p {
+		margin-bottom: $space;
+	}
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+		padding-right: 0;
+		flex-basis: 50%;
+	}
+}
+
+.left img {
+	height: auto;
+	width: 100%;
+	margin-top: 32px;
+	max-width: 280px;
+}
+
+.no-margin { margin: 0; }
+
+.no-border {
+	border-bottom: none;
+}
+
+
+//*  HIDE IT
+//*===========================================
+
+div[data-attr='hide'] {
+	display: none;
+	height: 0;
+	width: 0; 
+}
+

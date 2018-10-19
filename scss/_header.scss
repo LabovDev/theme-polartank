@@ -1,0 +1,56 @@
+//*  HEADER
+//*===========================================
+
+#header {
+	@include flex-p(
+		row,
+		wrap,
+		flex-start,
+		flex-start,
+		flex-start
+	)
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+}
+
+.polarBar {
+	background: $color-1 url('../../img/polar_bar.svg') 64px 0 no-repeat;
+	background-size: 60px;
+	height: 32px;
+	width: 100%;
+	@include flex-p(
+		row,
+		nowrap,
+		flex-end,
+		center,
+		flex-start
+	)
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+		background-position: 82px 0;
+	}
+}
+
+.branding {
+	background-color: $grey-2;
+	height: 60px;
+	padding: 12px;
+	width: 75%;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+		height: 80px;
+		padding: 20px;
+		width: 25%;
+	}
+}
+
+.branding__logo {
+	height: 36px;
+	width: auto;
+	@include trans(all, 0.3s, ease);
+	@media all and (min-width:$bp-2) {
+		height: 40px;
+	}
+}
