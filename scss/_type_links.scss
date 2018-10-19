@@ -324,7 +324,7 @@ a {
 .hdln--prdHeroH1 {
 	color: $color-1;
 	font-size: 9vw;
-	margin: 0 $space;
+	margin: 0 $space $space-half $space;
 	@include trans(all, 0.3s, ease);
 	@media all and (min-width:$bp-2) {
 		font-size: 7vw;
@@ -332,7 +332,7 @@ a {
 	@media all and (min-width:$bp-5) {
 		font-size: 5vw;
 		max-width: $mxw;
-		margin: 0 auto;
+		margin: 0 auto $space-half auto;
 	}
 	@media all and (min-width:$bp-6) {
 		font-size: 68px;

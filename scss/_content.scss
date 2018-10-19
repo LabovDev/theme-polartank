@@ -231,14 +231,17 @@ img {
 //*===========================================
 
 .sctHero--prd {
-	padding: $space-2x $space-half;
+	padding: $space $space-half $space-2x $space-half;
 	@include trans(all, 0.3s, ease);
 	@media all and (min-width:$bp-2) {
 		padding: $space-3x $space-half $space-4x $space-half;
 	}
 }
 
-.sctMain--prd {}
+.heroImg {
+	margin: 0 auto;
+	max-width: 1024px;
+}
 
 .sctSide--prd {
 	@include trans(all, 0.3s, ease);
