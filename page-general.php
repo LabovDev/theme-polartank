@@ -21,23 +21,23 @@ get_header(); ?>
 		</div> <!-- END .sctWrap--mxw -->
 		
 		<div class="sctWrap sctWrap--mxw" data-attr="<?php the_field('show_pillars'); ?>">
-			<h2 class="hdln--pllrMn">Welcome to Polar Country</h2>
-			<div class="hdln__rule"></div>
+			<h2 class="hdln hdln--pllrMn">Welcome to Polar Country</h2>
+			<div class="hdln hdln__rule"></div>
 			<section class="sctPllrs">
 				<div class="sctPllrs__pillar">
-					<div><h3 class="hdnl hdln--pllr"><?php the_field('plr_hdln_01'); ?></h3></div>
+					<div><h3 class="hdln hdln--pllr"><?php the_field('plr_hdln_01'); ?></h3></div>
 					<p class="txt txt--pllr"><?php the_field('plr_txt_01'); ?></p>
 				</div>
 				<div class="sctPllrs__pillar">
-					<div><h4 class="hdnl hdln--pllr"><?php the_field('plr_hdln_02'); ?></h4></div>
+					<div><h4 class="hdln hdln--pllr"><?php the_field('plr_hdln_02'); ?></h4></div>
 					<p class="txt txt--pllr"><?php the_field('plr_txt_02'); ?></p>
 				</div>
 				<div class="sctPllrs__pillar">
-					<div><h5 class="hdnl hdln--pllr"><?php the_field('plr_hdln_03'); ?></h5></div>
+					<div><h5 class="hdln hdln--pllr"><?php the_field('plr_hdln_03'); ?></h5></div>
 					<p class="txt txt--pllr"><?php the_field('plr_txt_03'); ?></p>
 				</div>
 				<div class="sctPllrs__pillar">
-					<div><h6 class="hdnl hdln--pllr"><?php the_field('plr_hdln_04'); ?></h6></div>
+					<div><h6 class="hdln hdln--pllr"><?php the_field('plr_hdln_04'); ?></h6></div>
 					<p class="txt txt--pllr"><?php the_field('plr_txt_04'); ?></p>
 				</div>
 			</section> <!-- END .sctPllrs -->
