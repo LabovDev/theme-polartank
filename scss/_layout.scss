@@ -30,7 +30,7 @@ article { margin-bottom: $space-2x; }
 	margin: 92px 0 0 0;
 	@include trans(all, 0.3s, ease);
 	@media all and (min-width:$bp-2) {
-		margin: 100px 0 0 0;
+		margin: 110px 0 0 0;
 	}
 }
 
