@@ -21,7 +21,7 @@ get_header(); ?>
 		</div> <!-- END .sctWrap--mxw -->
 		
 		<div class="sctWrap sctWrap--mxw" data-attr="<?php the_field('show_pillars'); ?>">
-			<h2 class="hdln hdln--pllrMn">Welcome to Polar Country</h2>
+			<h2 class="hdln hdln--pllrMn">Welcome to Polar Territory</h2>
 			<div class="hdln hdln__rule"></div>
 			<section class="sctPllrs">
 				<div class="sctPllrs__pillar">

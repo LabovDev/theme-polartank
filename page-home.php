@@ -50,8 +50,8 @@ get_header(); ?>
 </section>
 
 <section class="sctn sctn__tshow">
-	<h1 class="hdln hdln--tshow">See us at: 2018 Tank Truck Week &bull; Nov. 5 - 7, 2018 &bull; Music City Center &bull; Nashville, TN</h1>
-	<a class="btn btn--scnd" href="http://www.tanktruck.org/events/events-detail-view/2018-tank-truck-week" target="_blank">More Info</a>
+	<h1 class="hdln hdln--tshow">See us at: The 2019 WPMAEXPO &bull; Feb. 19 - 21, 2019 &bull; Mirage Hotel &bull; Las Vegas, NV</h1>
+	<a class="btn btn--scnd" href="https://www.wpma.com/national-convention" target="_blank">More Info</a>
 </section> <!-- END .sctn__tshow -->
 
 <section class="sctn sctn__ndxAbt">
