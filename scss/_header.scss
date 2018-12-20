@@ -16,7 +16,7 @@
 }
 
 .polarBar {
-	background: $color-1 url('../../img/polar_bar.svg') 64px 0 no-repeat;
+	background: $color-1 url('../../img/polar_bar.svg') 75px 0 no-repeat;
 	background-size: 60px;
 	height: 32px;
 	width: 100%;
@@ -29,7 +29,7 @@
 	)
 	@include trans(all, 0.3s, ease);
 	@media all and (min-width:$bp-2) {
-		background-position: 82px 0;
+		background-position: 94px 0;
 	}
 }
 

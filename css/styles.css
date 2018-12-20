@@ -1304,7 +1304,7 @@ a {
 
 /* line 18, Users/jtuck/Sites/polartank/wp-content/themes/theme-polartank/scss/_header.scss */
 .polarBar {
-  background: #004B85 url("../../img/polar_bar.svg") 64px 0 no-repeat;
+  background: #004B85 url("../../img/polar_bar.svg") 75px 0 no-repeat;
   background-size: 60px;
   height: 32px;
   width: 100%;
@@ -1318,7 +1318,7 @@ a {
   @media all and (min-width: 46.875em) {
     /* line 18, Users/jtuck/Sites/polartank/wp-content/themes/theme-polartank/scss/_header.scss */
     .polarBar {
-      background-position: 82px 0; } }
+      background-position: 94px 0; } }
 
 /* line 36, Users/jtuck/Sites/polartank/wp-content/themes/theme-polartank/scss/_header.scss */
 .branding {
